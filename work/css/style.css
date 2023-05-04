@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/* 初期設定クリア */
+input, select, button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0px;
+}
+
+.is-frex {
+    display: flex;
+}
+
+/* ページ背景 */
+.wrapper {
+    width: 100%;
+    background: #cff1ff;
+}
+
+/* フォーム作成題 */
+.page-title {
+    padding-top: 60px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* フォーム背景 */
+.inner {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.form-wrap {
+    padding: 50px;
+    background: #ecfaff;
+    margin-top: 60px;
+}
+
+/* アカウント作成題 */
+.form-title {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 大項目題 */
+.content-title {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* 小項目位置調整 */
+.personal-content, .account-content, .contact-content, .subscription-content, .submit-content {
+    margin-top: 50px;
+}
+
+/* 小項目名 */
+.label-text {
+    font-size: 14px;
+    color: #464646;
+}
+
+/* 必須項目 */
+.required {
+    color: #e40000;
+}
+
+/* 項目間位置調整 */
+.label-section{
+    margin-top: 25px;
+}
+
+.label-section:last-child {
+    margin-bottom: 50px;
+}
+
+/* 入力エリア設定 */
+.input-area {
+    width: 100%;
+    height: 35px;
+    margin-top: 6px;
+    padding: 5px;
+    color: #545648;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    background: #fbfbfb;
+}
+
+/* 入力エリア選択時 */
+.input-area:focus {
+    background-color: #fff;
+    border-color: rgba(93, 130, 194, 0.4);
+    box-shadow: 0px 0px 0px 2px rgba(1, 90, 191, 0.1);
+}
+
+/* 職業欄 */
+.select-area, .gender-area {
+    margin-top: 6px;
+}
+
+/* 性別欄位置調整 */
+.gender-area {
+    margin-top: 6px;
+}
+
+.gender-element:first-child {
+   margin-left: 0; 
+}
+
+.gender-element {
+    margin-left: 10px;
+}
+
+/* 性別選択項目の位置・色彩設定 */
+.gender-element span {
+    position: relative;
+    display: inline-block;
+    padding: 3px 3px 3px 20px;
+    color: #545658;
+}
+
+/* 入力前ラジオボタン */
+.gender-element span:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 14px;
+    height: 14px;
+    background-color: #fbfbfb;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* 入力後ラジオボタン */
+.gender-content:checked + span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: #017cbf;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* 選択項目エリア幅・位置調整 */
+.select-unit {
+    width: 100%;
+    position: relative;
+}
+
+/* 選択項目下矢印表示 */
+.select-unit:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 10px;
+    top: 45%;
+    display: inline-block;
+    border-bottom: 2px solid #c3c3c3;
+    border-right: 2px solid #c3c3c3;
+    transform: rotate(45deg);
+}
+
+/* 購読情報欄 */
+.subscription-label {
+    position: relative;
+    padding-left: 25px;
+}
+
+/* 入力前チェックボックス */
+.subscription-label:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    margin-top: -8px;
+    border: 1px solid #d9d9d9;
+    background: #ffffff;
+}
+
+/* 入力後チェックボックス */
+.subscription-unit input:checked + .subscription-label:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    width: 6px;
+    height: 13px;
+    margin-top: -11px;
+    border-right: 3px solid #0140bf;
+    border-bottom: 3px solid #0140bf;
+    transform: rotate(45deg);
+}
+
+/* アカウント作成ボタン */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-submit {
+    padding: 13px;
+    background: #0170bf;
+    color: #fff;
+}
+
+.btn-submit:active {
+    background: #fff;
+    color: #0170bf;
+    border: 1px solid #d9d9d9;
+}
+
+/* プライバシーポリシー説明 */
+.other-text {
+    margin-top: 25px;
+    font-size: 10px;
+}
+
+/* プライバシーポリシーリンク */
+.link-color {
+    color: #0170bf;
+    text-decoration: none;
+}
